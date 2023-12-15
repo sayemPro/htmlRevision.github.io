@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>All HTML Tag and attributes practices</title>
+        <!-- title icon or favicon -->
+        <link rel="shortcut icon" href="image/favicon-Logo.png" type="image/x-icon">
+        <style>
+            body{
+                padding: 0 50px;
+            }
+            table,tr, th, td{
+                /* border: 1px solid black;  dotted/dashed/solid/double/groove/ridge/inset/outset/none/hidden */
+                border-collapse: collapse;
+                border-bottom:1px solid rgb(118, 118, 118);
+                
+            }
+            table tr, td{
+                padding: 12px;
+            }
+            
+            td:nth-child(1){
+                border-right: 1px solid rgb(192, 192, 192);
+            }
+            td:nth-child(2){
+                border-right: 1px solid  rgb(192, 192, 192);
+            }
+          
+            tr:nth-child(even){
+                background-color: #b9ffff;
+            }
+            tr:first-child{
+                background-color: #025054;
+                color: white;
+                border: 1px solid black;
+            }
+            tr:hover{
+                background-color: rgb(13, 95, 95);
+                color: rgb(15, 239, 120);
+            }
+            form label, input, select, textarea, button{
+                margin-left: 25px;
+                margin-top: 10px;
+            }
+            
+            .m-0{
+                margin-left: 0px;
+            }
+            form{
+                background-color: tomato;
+            }
+        </style>
+    </head>
+    <body style="height: 10000px">
+        <!-- Website list---
+            1. Ecommerce ✔
+            2. Portfolio ✔
+            3. Business website ✔
+            4. Nonprofit or charity website. ✔
+            5. Blogs ✔
+            6. Educational ✔
+            7. Personal Website ✔
+            8. Social Media ✔
+            9. Brochure ✔
+            10. Blog
+            11. Entertainment.
+            12. Forum
+            13. Online megazine ✔
+            14. webPortal.✔
+            15. Membership
+            16. Cummunity forum or wikipedia.
+            17. Crownfunding
+            18. Landing page. ✔
+            19. Photo sharing.
+            20. Video Streaming service website. ✔
+            21. Events.
+            22. Catalog website.
+            23. Corporate Website.
+            24. Branding or Biographi website.
+            25. Resume
+            26. News.
+            27. Media.
+            28. Political Website.
+            29. Government Website. ✔
+            30. Search Engine. ✔
+            31. Review Site.
+            32. Question and Anwser website. ✔
+            33. Job Brands. ✔
+            34. Coupon Website.
+            35. Affiliate Website. ✔
+            36. Auction sites.
+            37. Online Magazine.
+            38. Booking Website.
+            39. Startup Website.
+            40. Petition Website.
+            41. School website. ✔
+            42. Hobby Website.
+            43. Interactive Website.
+            44. Travel Website.
+            45. Directory Website.
+            46. Wedding Website. ✔
+            47. Subscription Website.
+            48. Kid-friendly Website.
+
+        -->
+
+        <!--HTML Heading tag-- (Block Tag)-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <!--Prapgraph Tag-- (Block Tag)-->
+        <p>This is Pragraph tag</p>
+        <p>This is Another Pragraph Tag</p>
+
+        <!--Horizontal Rules-- (Block Tag)-->
+        <hr>
+
+        <!--Line Breaks-- (Inline Tag)-->
+        <br>
+
+        <!--Pre tag-- (Block Tag)-->
+        <pre>
+            This is pre Tag
+                So, It's very helpful for write poem.
+        </pre>
+        
+        <!--Some important Pragraph tag-- (Inline Tag)-->
+        <p>
+            <b> - Bold text </b> </br>
+            <strong> - Important text </strong> </br> 
+            <i> - Italic text </i> </br>
+            <em> - Emphasized text </em> </br>
+            <mark> - Marked text </mark> </br>
+            <small> - Smaller text </small> </br>
+            <del> - Deleted text </del> </br>
+            <ins> - Inserted text </ins> </br>
+            The <sub> - Subscript </sub> text </br>
+            The <sup> - Superscript </sup> text  </br>
+        </p>
+
+        <!-- Blockquoute tag (Block tag) Full paragraph 1 tap space নিবে-->
+        <p>Here is a quote from WWF's website:</p>
+        <blockquote>
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. 
+        </blockquote>
+
+        <!-- Quotation tag (inline tag) -->
+        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+        <!-- abbr tag (inline tag) hover করলে দেখা যায়-->
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+        <!-- Quotation tag (Block tag) contanct address এর জন্য ব্যবহৃত হয়-->
+        <address>
+            Written by John Doe.<br> 
+            Visit us at:<br>
+            Example.com<br>
+            Box 564, Disneyland<br>
+            USA
+        </address>
+
+        <!-- Quotation tag (Block tag) contanct address এর জন্য ব্যবহৃত হয়-->
+        <!-- image tag (inline tag)-->
+        <img src="image/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+        <!-- HTML Link (Inline tag)-->
+        <a href="#" target="_top" title="link">Link</a> <br> <br>
+        <button onlclick="">Button Tag</button> <br> <br>
+
+        <!-- Image map with link-->
+        <img src="image/laptop.jpg" alt="Workplace" usemap="#workmap" loading="eager">
+
+        <map name="workmap">
+            <area shape="rect" coords="198,60,94,133" onclick="" href="https://www.youtube.com/results?search_query=apple+macbook+laptop+review" alt="laptop" target="_blank" title="Laptop review from youtube">
+        </map>
+      
+        <!-- background image-->
+        <section style="background-image:url(image/background-image.jpg); background-size: 100% 100%; background-repeat: no-repeat; background-attachment: fixed;">
+            <center><p style="height: 300px; font-size: 50px; color: white; padding-top: 100px;"><b>This is background Image</b></p></center>
+        </section>
+
+        <!-- table (Block Tag)-->
+        <table style="width: 80%;">
+            <tr style="height: 35px;">
+                <th>Sl. No.</th>
+                <th style="width: 50%;">Name</th>
+                <th>Last Education Qualification</th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Md. Sayem Sarkar</td>
+                <td>Honours 2nd Year</td>
+            </tr>
+            <tr>
+                <td rowspan="2">02</td>
+                <td>Mst. Atifa Anjum (Akhi)</td>
+                <td>Honours 1st year</td>
+            </tr>
+            <tr>
+                <!-- <td>01</td> -->
+                <td>Md. Sayem Sarkar</td>
+                <td>Honours 2nd Year</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Mst. Atifa Anjum (Akhi)</td>
+                <td>Honours 1st year</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td colspan="2">Md. Sayem Sarkar</td>
+                <!-- <td>Honours 2nd Year</td> -->
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Mst. Atifa Anjum (Akhi)</td>
+                <td>Honours 1st year</td>
+            </tr>
+        </table>
+
+        <!-- List -->
+            <!-- Order-list (Block tag)-->
+            <ol type="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+
+            <!-- Unorder-list (Block tag)-->
+            <ul type="square"> <!--disc/square/circle/none-->
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+
+             <!-- Description-list (Block tag)-->
+             <dl>
+                <dt>Coffee</dt>
+                    <dd>- black hot drink</dd>
+                    <dd>- black hot drink</dd>
+                    <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                    <dd>-white cold drink</dd>
+                    <dd>-white cold drink</dd>
+                    <dd>-white cold drink</dd>
+            </dl>
+
+           <!-- iframe  -->
+           <!-- <iframe src="https://www.google.com/" frameborder="0" height="300px" width="300px" title="google.com"></iframe> <br> <br> -->
+           
+            <!-- <iframe width="300px" height="250px" src="https://www.youtube.com/embed/wqOnQSaT8yA?si=5PTe71atYqzI0ljd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+            <!-- form -->
+            
+            <!----form Attributes--
+                    action=""
+                    method="POST/GET"
+                    target="_black/_top/-parent/-self"
+                    autocomplete="on/off"
+                    navalidate
+
+                --form elements--
+                    <input>
+                    <label>
+                    <select>
+                    <textarea>
+                    <button>
+                    <fieldset>
+                    <legend>
+                    <datalist>
+                    <output>
+                    <option>
+                    <optgroup>
+
+                -----------input types-------
+                <input type="button">
+                <input type="checkbox">
+                <input type="color">
+                <input type="date">
+                <input type="datetime-local">
+                <input type="email">
+                <input type="file">
+                <input type="hidden">
+                <input type="image">
+                <input type="month">
+                <input type="number">
+                <input type="password">
+                <input type="radio">
+                <input type="range">
+                <input type="reset">
+                <input type="search">
+                <input type="submit">
+                <input type="tel">
+                <input type="text">
+                <input type="time">
+                <input type="url">
+                <input type="week"> 
+
+                -----------input Attributes-------
+                value=""
+                readonly
+                diabled
+                size=""
+                maxlength=""
+                max=""
+                min=""
+                multiple
+                pattern=""
+                placeholder=""
+                required
+                step=""
+                autofocus
+                alt=""
+                height=""
+                width=""
+                list=""
+                autocomplete="on/off"
+
+            -->
+<br> <br>
+            <form action="#" method="post" target="_blank" autocomplete="on" oninput="x.value=parseInt(a.value)">
+                <fieldset style="width: 700px;">
+                <legend>My First Form</legend>
+                    <!-- inpute Element type="text"-->
+                    <label for="fName">Frist Name: </label>
+                    <input type="text" name="fName" id="fName" value="" placeholder="First Name" required>* <br>
+                    
+                    <label for="lName">Last Name: </label>
+                    <input type="text" name="lName" id="lName" value="" placeholder="Last Name" required>* <br>
+                    
+                    <!-- inpute type ="radio"-->
+                    <label> Your Favorite Programming Language: </label>
+                    <input type="radio" name="fav_language" id="fav_language" required>
+                    <label for="" class="m-0">JavaScipt</label>
+                    <input type="radio" name="fav_language" id="fav_language" required>
+                    <label for="" class="m-0">PHP</label>
+                    <input type="radio" name="fav_language" id="fav_language" required>
+                    <label for="" class="m-0">C#</label> <br>
+                    
+                    <!-- input type="checkbox" -->
+                    <input type="checkbox" name="" id="" required>
+                    <label for="" class="m-0">I have accepted all rules and regulations or policy. </label> <br>
+                    
+                    <!--Select Element-->
+                    <label for="">Select Car: </label>
+                    <select name="" id="">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">saab</option>
+                        <option value="fiat">fiat</option>
+                        <option value="audi">audi</option>
+                    </select> <br>
+
+                    <!--textarea Element-->
+                    <textarea name="" id="" cols="30" rows="5" placeholder="Comment here..."></textarea> <br>
+                    
+                    <!--button Element-->
+                    <button type="button" onclick="alert('You clicked button')">Button</button> <br>
+                    
+                    <!--Datalist Element-->
+                    <input list="browser">
+                    <datalist id="browser">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist> <br>
+
+                    <!--output Element || input type="range"-->
+                    <input type="range" name="a" id="a">
+                     = <output for="a" name="x"></output>% <br>
+
+                     <input type="file" name="" id="">
+                    <!-- inpute type ="submit"-->
+                    <input type="reset" value="reset">
+                    <input name="submit" type="submit" value="Submit" >
+                </fieldset>
+            </form>
+</html>
+
+
